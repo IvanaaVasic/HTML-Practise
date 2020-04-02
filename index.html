@@ -3,42 +3,197 @@
 <html>
   <head>
     <title>Practise</title>
-    <style type="text/css"></style>
+
+    <style type="text/css">
+      .page {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .header {
+        background-color: sandybrown;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        z-index: 1;
+        margin-top: 0;
+        display: flex;
+      }
+      .logo {
+        /* display: flex;*/
+        /* justify-content: center;*/
+        background-image: url("logo.png");
+        width: 165px;
+        height: 50px;
+        background-repeat: no-repeat;
+        /*background-attachment: fixed;*/
+        background-position: center;
+        /*z-index: 2;*/
+        /*position:asolute;*/
+        /*z-index: 2;*/
+        margin-left: 600px;
+      }
+      .logo:hover {
+        background-image: url("logoch.png");
+        width: 165px;
+        height: 50px;
+        background-repeat: no-repeat;
+      }
+      .dropbtn {
+        background-color: sandybrown;
+        background-image: url("menu.png");
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        height: 50px;
+        width: 50px;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-left: 380px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: tan;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+        background-color: tan;
+      }
+
+      .intro {
+        display: flex;
+        position: absolute;
+        top: 75%;
+        left: 85px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .title {
+        display: flex;
+        background-color: rgb(238, 230, 230);
+        width: 100%;
+        padding-left: 85px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .content {
+        display: flex;
+        background-color: rgb(238, 230, 230);
+        width: 100%;
+        height: 300px;
+        justify-content: space-around;
+      }
+      .loremipsum {
+        width: 500px;
+        font-size: 18px;
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .myButton {
+        background-color: transparent;
+        border-radius: 28px;
+        border: 1px solid black;
+        display: inline-block;
+        cursor: pointer;
+        color: black;
+        font-family: Arial;
+        font-size: 17px;
+        padding: 16px 31px;
+        text-decoration: none;
+        position: relative;
+        bottom: 300px;
+        left: 85px;
+      }
+      .myButton:hover {
+        background-color: sandybrown;
+      }
+      .myButton:active {
+        position: relative;
+        top: 1px;
+      }
+      .photo img {
+        margin-top: 50px;
+        width: 100%;
+      }
+      .photo {
+        height: 800px;
+        justify-content: center;
+      }
+    </style>
   </head>
 
   <body>
-    <h1>Volim Gmaza</h1>
-
-    <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book. It has survived not only five centuries, but
-      also the leap into electronic typesetting, remaining essentially
-      unchanged. It was popularised in the 1960s with the release of Letraset
-      sheets containing Lorem Ipsum passages, and more recently with desktop
-      publishing software like Aldus PageMaker including versions of Lorem
-      Ipsum.
-    </p>
-    <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book. It has survived not only five centuries, but
-      also the leap into electronic typesetting, remaining essentially
-      unchanged. It was popularised in the 1960s with the release of Letraset
-      sheets containing Lorem Ipsum passages, and more recently with desktop
-      publishing software like Aldus PageMaker including versions of Lorem
-      Ipsum.
-    </p>
-
-    <p>Dnevne aktivnosti:</p>
-    <ul>
-      <li>Dorucak</li>
-      <li>Posao</li>
-      <li>Rucak</li>
-      <li>Trening</li>
-      <li>Vecera</li>
-    </ul>
+    <div class="page">
+      <div class="header">
+        <div class="logo"></div>
+        <div class="dropdown">
+          <button class="dropbtn"></button>
+          <div class="dropdown-content">
+            <a href="#">Menu</a>
+            <a href="#">Blog</a>
+            <a href="#">Recipes</a>
+          </div>
+        </div>
+      </div>
+      <div class="photo">
+        <div class="intro">
+          <h1>Lorem Ipsum</h1>
+        </div>
+        <img src="food.jpg" />
+        <a href="#" class="myButton">VISE O NAMA</a>
+      </div>
+      <div class="title">
+        <h1>Lorem Ipsum</h1>
+      </div>
+      <div class="content">
+        <p class="loremipsum">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+        <p class="loremipsum">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+      </div>
+    </div>
   </body>
 </html>
