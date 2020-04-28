@@ -223,8 +223,10 @@ body {
 }*/
 .cardHolder {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 .mdc-card {
   width: 350px;
