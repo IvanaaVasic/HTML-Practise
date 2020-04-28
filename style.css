@@ -189,7 +189,7 @@ body {
 }
 .myButton:active {
   position: relative;
-  top: 1px;
+  top: 1px;F
 }
 .title {
   display: flex;
@@ -227,7 +227,7 @@ body {
   margin-top: 10px;
 }
 .mdc-card {
-  width: 400px;
+  width: 350px;
   margin-left: 20px;
 }
 .mdc-typography--headline6 {
